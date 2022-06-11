@@ -24,17 +24,20 @@ class MyApp extends StatelessWidget {
             // Add the app bar to the CustomScrollView.
             SliverAppBar(
               // Provide a standard title.
-              title: const Text(title),
+              title: const Text(''),
               snap: true,
               pinned: true,
               // Allows the user to reveal the app bar if they begin scrolling
               // back up the list of items.
               floating: true,
               // Display a placeholder widget to visualize the shrinking size.
-              flexibleSpace: Center(child:
-                Image.network('https://d1r0kpcohdg1bn.cloudfront.net/assets/logo-b94e50d8b08809e8b662c9c12a4c9580e4f6a400b66ba8ad951af2fbc9da9eeb.png')),
+              flexibleSpace:     Container(
+                padding: EdgeInsets.only(top: 50),
+                height: 140,
+                  child: Image.network('https://lh3.googleusercontent.com/ZsjJhvk1vPvrhtaJ6_CjD-19BF_60KiUDctgMxJUyWiVyYNXXGUv6pttlbiuKlRHnlE4yDFyHixgLfc_bnX88HItA5oSLPxdIwiJYk_zkXkMtTdGvE1J1wFwqhKr_o1CJM5pHGjvh0DnaCHFJNrcxRWkXmcaatfj3NhImS3DM26aSuWHzzHuBYnf45Htek9l6edWXDrsCUdjbV7QbUVzO-zc4W4erLboi56K6Np8EDfgv_KDFKRrRcnIkLFQADiKwIsCBOrr_VedRbMFyCaOcbG0-pgkFA62f6zqauIBe5pag6ueYxbm8RJyzqr9wK1AVOIevlFe2Wr8OQ84kEg5OFghtpXvnifl2c4itiy7wSchY2kktjbNbLib3OFdITDdZVOlzj4u3WcvavjpKWy964EYCe_GanjHUSbgvBnifRBr704yWV_QT_6nJC1M23T0y-46CpCLsprIPKtFsJS9HHXRcuLOkT-g8qc-Uy07gvCQ0cR_vzOcla4GtECSWjhlggx84zy2sG4Q5BR3rjlknJxIZ_AlRB_Dzp0y5E5nIwi1uIzDb0nkmM01Yszb_dwYVs3rl-fKG0KIkysbzB3eKfKUvXw_76EHk9GxQS1J5A6opsQz9BAw3R8Nq_iAUl5JSTiXi8wsuUK0YQwbkpryLbJpMbzdi3wNmx0DqFSgBL0kdBk1qmGN8EjjhhivMa223mxsQK7NlqPmstdHT2wINOq8gxRtzGDN5k1vQJJsrHFk-fDd26pyy8PgXM1S9A=w233-h147-no?authuser=0')),
+
               // Make the initial height of the SliverAppBar larger than normal.
-              expandedHeight: 200,
+              expandedHeight: 80,
             ),
             // Next, create a SliverList
             SliverList(
